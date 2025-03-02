@@ -1,5 +1,4 @@
-
-import CartWidget from './CartWidget';
+import CartWidget from './cartWidget';
 
 const NavBar = () => {
   return (
@@ -19,5 +18,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
 
