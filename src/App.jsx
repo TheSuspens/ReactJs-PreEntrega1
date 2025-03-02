@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../src/components/navBar.jsx';
-import ItemListContainer from '../src/components/itemListContainer.jsx';
+import NavBar from '../src/components/navbar.jsx';
+import ItemListContainer from '../src/components/itemListContainer';
 
 const App = () => {
   const mensajeBienvenida = "Bienvenido a nuestra tienda";
