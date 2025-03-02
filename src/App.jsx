@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../src/components/navbar.jsx';
+import NavBar from '../src/components/navBar.jsx';
 import ItemListContainer from '../src/components/itemListContainer.jsx';
 
 const App = () => {
