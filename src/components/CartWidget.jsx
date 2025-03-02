@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CartWidget = () => {
-  const itemsInCart = 0; 
 
   return (
     <div className="cart-widget">
