@@ -1,76 +1,143 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background-image: url(./assets/img/BG1.jpg);
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/img/BG2.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  filter: drop-shadow(50%);
-
 }
-h1{
-  margin-left: 40px;
-  font-weight: 800;
-  color: burlywood;
-}
-h2{
-  margin-left: 25px;
-  font-weight: 800;
-  color: burlywood;
-  text-transform: uppercase;
-  box-shadow: #333;
 
-
-}
+/* Estilos para la navegación */
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
   background-color: #333;
-  color: white; 
+  color: white;
+  padding: 10px 20px;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  display: inline;
+  margin-right: 20px;
 }
-nav ul li a{
-  font-size: 25px;
+
+nav a {
+  color: white;
   text-decoration: none;
-  color: grey;
-  background-color: burlywood;
-  padding: 10px;
-  border-radius: 10px;
 }
-.cart-widget {
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los contenedores */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Estilos para el catálogo de productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(25% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el detalle del producto */
+.product-detail {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail h2 {
+  margin-top: 0;
+}
+
+/* Estilos para el carrito */
+.cart {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background: darkred;
+}
+
+/* Estilos para el formulario de checkout */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkout-form button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background: darkgreen;
+}
+.cart-item {
   display: flex;
   align-items: center;
-}
-.cart-widget span{
-  font-size: 25px;
-  color: white;
-  background-color: red;
-  border-radius: 100px;
-  padding: 5px;
-  position: absolute;
-  right: 30px;
-  top: 10px;
+  justify-content: space-between;
 }
 
-.cart-widget img {
-  width: 60px;
-  margin-right: 40px;
+.cart-item img {
+  margin-right: 10px;
+  border-radius: 4px;
 }
-
-.item-list-container {
-  padding: 20px;
-  text-align: center;
-}
-

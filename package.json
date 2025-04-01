@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
@@ -29,5 +32,13 @@
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "eslint.config.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSuspens/ReactJs-PreEntrega1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheSuspens/ReactJs-PreEntrega1/issues"
+  },
+  "homepage": "https://github.com/TheSuspens/ReactJs-PreEntrega1#readme"
 }
