@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import ItemCount from './ItemCount'; // Componente para seleccionar cantidad
-import { useCart } from './CartContext'; // Importar el contexto del carrito
+import ItemCount from './ItemCount'; 
+import { useCart } from './CartContext'; 
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -39,7 +39,7 @@ const ItemDetailContainer = () => {
       name: producto.name, 
       price: producto.price, 
       quantity: cantidad, 
-      thumbnail: producto.thumbnail // Usar 'thumbnail' para la imagen
+      thumbnail: producto.thumbnail
     };
     addToCart(itemToAdd);
     alert(`${cantidad} de ${producto.name} agregado al carrito.`);

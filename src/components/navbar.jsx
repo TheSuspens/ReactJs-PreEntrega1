@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from './CartContext';
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Asegúrate de tener Bootstrap Icons instalados
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Navbar = () => {
   const { cart } = useCart();
@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li><Link className="dropdown-item" to="/category/electronics">Electrónica</Link></li>
                 <li><Link className="dropdown-item" to="/category/clothing">Ropa</Link></li>
                 <li><Link className="dropdown-item" to="/category/home">Hogar</Link></li>
-                {/* Agrega más categorías según sea necesario */}
+                {}
               </ul>
             </div>
           </div>
